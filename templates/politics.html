@@ -1,0 +1,28 @@
+$def with (result)
+
+<html>
+    <head>
+        <title>Political Draw = The Grand Game</title>
+    </head>
+<body>
+
+<h1>Politics Form</h1>
+
+<form action="/" method="POST">
+    <h3>Government</h3>
+    <input type="radio" name="government" value="democracy">Democracy<br>
+    <input type="radio" name="government" value="dictatorship">Dictatorship<br>
+    <h3>Investment</h3>
+    <input type="radio" name="investment" value="0">0%<br>
+    <input type="radio" name="investment" value="10">10%<br>
+    <input type="radio" name="investment" value="20">20%<br>
+    <input type="radio" name="investment" value="30">30%<br>
+    <input type="submit">
+</form>
+
+$if result:
+    <h1>Result</h1>
+    $result
+
+</body>
+</html>
